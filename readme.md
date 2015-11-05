@@ -1,0 +1,1 @@
+Le TD 2 n'affiche pas le résultat dans la fenêtre, vous pouvez vérifier le bon fonctionnement en débuggant.
