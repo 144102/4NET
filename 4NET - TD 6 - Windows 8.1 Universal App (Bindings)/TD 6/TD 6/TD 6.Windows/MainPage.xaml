@@ -34,4 +34,11 @@
             </HubSection>
         </Hub>
     </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="OpenSettingsFlyout1Command" Label="Settings" Icon="Setting" Click="OpenSettingsFlyout1Command_Click"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>

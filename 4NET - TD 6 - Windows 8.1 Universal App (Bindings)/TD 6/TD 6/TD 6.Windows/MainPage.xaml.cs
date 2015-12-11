@@ -35,13 +35,19 @@ namespace TD_6
         public MainPage()
         {
             this.InitializeComponent();
-            base.DataContext = mainViewModel;
+            this.DataContext = mainViewModel;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainViewModel.Name += "1";
             MainViewModel.Persons.Add(new Models.Person { FirstName="addedFN", LastName="addedLN"});
+        }
+
+        private void OpenSettingsFlyout1Command_Click(object sender, RoutedEventArgs e)
+        {
+            var flyout = new SettingsFlyout1();
+            flyout.ShowIndependent();
         }
     }
 }
